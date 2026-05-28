@@ -220,15 +220,27 @@ export default function HomeClient() {
         <div className="absolute top-0 right-0 w-[600px] h-[600px] glow-gold" />
         <div className="absolute bottom-0 left-0 w-[500px] h-[400px] glow-jade" />
 
-        {/* 佛塔剪影 - 左侧 */}
-        <div className="absolute left-0 bottom-0 w-[400px] h-full opacity-30">
-          <GoldenPagoda className="absolute bottom-0 left-8 w-40 h-56 pagoda-glow" />
-        </div>
+        {/* 仰光大金塔真实照片 - 左侧背景 */}
+        <div className="absolute left-0 bottom-0 w-[550px] h-[80%] opacity-[0.08]"
+          style={{
+            backgroundImage: `url(https://upload.wikimedia.org/wikipedia/commons/b/b1/20160813_Shwedagon_Pagoda_9949_DxO.jpg)`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'bottom center',
+            maskImage: 'linear-gradient(to top, black 40%, transparent 100%)',
+            WebkitMaskImage: 'linear-gradient(to top, black 40%, transparent 100%)',
+          }}
+        />
 
-        {/* 蒲甘天际线 - 底部 */}
-        <div className="absolute bottom-0 left-0 right-0 h-24 opacity-20">
-          <BaganSilhouette className="w-full h-full" />
-        </div>
+        {/* 蒲甘塔林真实照片 - 底部 */}
+        <div className="absolute bottom-0 left-0 right-0 h-28 opacity-[0.06]"
+          style={{
+            backgroundImage: `url(https://upload.wikimedia.org/wikipedia/commons/5/53/Shwedagon_Zedi_Daw_Yangon_2.jpg)`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center bottom',
+            maskImage: 'linear-gradient(to top, black 30%, transparent 100%)',
+            WebkitMaskImage: 'linear-gradient(to top, black 30%, transparent 100%)',
+          }}
+        />
 
         {/* 几何装饰 */}
         <GoldRings />
@@ -285,14 +297,23 @@ export default function HomeClient() {
               </div>
             </div>
 
-            {/* 右栏 - 佛塔视觉中心 */}
+            {/* 右栏 - 仰光大金塔真实照片 */}
             <div className="hidden lg:flex items-center justify-center animate-scale-in a-delay-3">
               <div className="relative">
-                <GoldenPagoda className="w-48 h-64 pagoda-glow" />
+                <div className="w-52 h-72 rounded-xl overflow-hidden shadow-2xl shadow-burma-900/40 border border-burma-400/15"
+                  style={{
+                    backgroundImage: `url(https://upload.wikimedia.org/wikipedia/commons/b/b1/20160813_Shwedagon_Pagoda_9949_DxO.jpg)`,
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center 30%',
+                  }}>
+                  {/* 金色渐变叠加 - 保持品牌调性 */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-rich-950/70 via-rich-950/20 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-br from-burma-400/15 to-transparent" />
+                </div>
                 {/* 环绕装饰环 */}
                 <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                  <div className="w-56 h-56 rounded-full border border-burma-400/8 animate-spin-slow" style={{ animationDuration: '35s' }} />
-                  <div className="absolute w-64 h-64 rounded-full border border-burma-400/6 animate-spin-slow" style={{ animationDuration: '45s', animationDirection: 'reverse' }} />
+                  <div className="w-[calc(100%+32px)] h-[calc(100%+32px)] rounded-xl border border-burma-400/10 animate-spin-slow" style={{ animationDuration: '35s' }} />
+                  <div className="absolute w-[calc(100%+48px)] h-[calc(100%+48px)] rounded-xl border border-burma-400/6 animate-spin-slow" style={{ animationDuration: '45s', animationDirection: 'reverse' }} />
                 </div>
               </div>
             </div>
@@ -308,11 +329,17 @@ export default function HomeClient() {
         </div>
       </section>
 
-      {/* ═══════════ 帕敢矿脉 ═══════════ */}
+      {/* ═══════════ 帕敢矿脉 · 翡翠之源 ═══════════ */}
       <section className="relative py-32 overflow-hidden">
-        <div className="absolute inset-0 opacity-[0.03]">
-          <JadeMine className="w-full h-full" />
-        </div>
+        {/* 帕敢翡翠矿山真实照片背景 */}
+        <div className="absolute inset-0 opacity-[0.06]"
+          style={{
+            backgroundImage: `url(https://upload.wikimedia.org/wikipedia/commons/2/2d/A_large_company_Jade_Mine_in_Hpakant_2018_January_.jpg)`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            filter: 'grayscale(100%) contrast(130%) brightness(0.5)',
+          }}
+        />
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[400px] glow-jade" />
 
         <div className="max-w-7xl mx-auto px-6 relative z-10">
@@ -459,12 +486,12 @@ export default function HomeClient() {
       {/* ═══════════ 预约私洽 ═══════════ */}
       <section className="relative py-32 border-t border-burma-400/5 overflow-hidden">
         {/* 帕敢翡翠矿山真实照片背景 */}
-        <div className="absolute inset-0 opacity-[0.05]"
+        <div className="absolute inset-0 opacity-[0.06]"
           style={{
-            backgroundImage: `url(https://images.pexels.com/photos/2859169/pexels-photo-2859169.jpeg?auto=compress&w=1600)`,
+            backgroundImage: `url(https://upload.wikimedia.org/wikipedia/commons/c/c4/Jade_Mine.jpg)`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
-            filter: 'grayscale(100%) contrast(130%) brightness(0.6)',
+            filter: 'grayscale(100%) contrast(120%) brightness(0.5)',
           }}
         />
 
