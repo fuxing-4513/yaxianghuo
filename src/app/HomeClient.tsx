@@ -456,14 +456,15 @@ export default function HomeClient() {
         </div>
       </section>
 
-      {/* ═══════════ 联系 ═══════════ */}
-      <section className="relative py-32 border-t border-burma-400/5">
-        <div className="absolute inset-0 opacity-[0.03]"
+      {/* ═══════════ 预约私洽 ═══════════ */}
+      <section className="relative py-32 border-t border-burma-400/5 overflow-hidden">
+        {/* 帕敢翡翠矿山真实照片背景 */}
+        <div className="absolute inset-0 opacity-[0.05]"
           style={{
-            backgroundImage: `url(https://images.pexels.com/photos/2599678/pexels-photo-2599678.jpeg?auto=compress&w=1600)`,
+            backgroundImage: `url(https://images.pexels.com/photos/2859169/pexels-photo-2859169.jpeg?auto=compress&w=1600)`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
-            filter: 'grayscale(100%)',
+            filter: 'grayscale(100%) contrast(130%) brightness(0.6)',
           }}
         />
 
