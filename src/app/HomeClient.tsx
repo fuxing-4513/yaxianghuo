@@ -458,9 +458,14 @@ export default function HomeClient() {
 
       {/* ═══════════ 联系 ═══════════ */}
       <section className="relative py-32 border-t border-burma-400/5">
-        <div className="absolute inset-0 opacity-[0.025]">
-          <BaganSilhouette className="w-full h-full" />
-        </div>
+        <div className="absolute inset-0 opacity-[0.03]"
+          style={{
+            backgroundImage: `url(https://images.pexels.com/photos/2599678/pexels-photo-2599678.jpeg?auto=compress&w=1600)`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            filter: 'grayscale(100%)',
+          }}
+        />
 
         <div className="max-w-4xl mx-auto px-6 text-center relative z-10">
           <span className="text-[11px] text-burma-400 tracking-[0.25em] uppercase">Private Consultation</span>
