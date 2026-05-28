@@ -1,0 +1,121 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: 'Noto Serif SC', 'Georgia', serif;
+  --font-sans: 'Noto Sans SC', 'system-ui', sans-serif;
+
+  /* 翡翠绿系 */
+  --color-jade-50: #ecfdf5;
+  --color-jade-100: #d1fae5;
+  --color-jade-200: #a7f3d0;
+  --color-jade-300: #6ee7b7;
+  --color-jade-400: #34d399;
+  --color-jade-500: #10b981;
+  --color-jade-600: #059669;
+  --color-jade-700: #047857;
+  --color-jade-800: #065f46;
+  --color-jade-900: #064e3b;
+  --color-jade-950: #022c22;
+
+  /* 缅甸金 */
+  --color-burma-50: #fffbeb;
+  --color-burma-100: #fef3c7;
+  --color-burma-200: #fde68a;
+  --color-burma-300: #d4a017;
+  --color-burma-400: #c8960c;
+  --color-burma-500: #b8860b;
+  --color-burma-600: #a07509;
+  --color-burma-700: #8b6508;
+  --color-burma-800: #6b4d06;
+
+  /* 深色底 */
+  --color-rich-900: #080808;
+  --color-rich-800: #0f0f0f;
+  --color-rich-700: #1a1a1a;
+  --color-rich-600: #252525;
+
+  /* 象牙白 */
+  --color-ivory-50: #fafaf7;
+  --color-ivory-100: #f5f2eb;
+  --color-ivory-200: #ebe4d3;
+}
+
+@font-face {
+  font-family: 'Noto Serif SC';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/notoserifsc/v31/H4c8BXePl9DZ0Xe7gG9cyOj7mm63SzZBEtERe7Y.otf) format('opentype');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Noto Serif SC';
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/notoserifsc/v31/H4c8BXePl9DZ0Xe7gG9cyOj7mm63SzZBEtERe7Y.otf) format('opentype');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Noto Sans SC';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/notosanssc/v36/k3kCo84MPvpLmixcA63oeAL7Iqp5IZJF9bmaG9_EnYxNbPzS5HE.otf) format('opentype');
+  font-display: swap;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.animate-fade-up {
+  animation: fadeUp 0.8s ease-out both;
+}
+
+.animate-fade-up-delay-1 { animation-delay: 0.15s; }
+.animate-fade-up-delay-2 { animation-delay: 0.3s; }
+.animate-fade-up-delay-3 { animation-delay: 0.45s; }
+
+.animate-shimmer {
+  background: linear-gradient(90deg, transparent 0%, rgba(212, 160, 23, 0.15) 50%, transparent 100%);
+  background-size: 200% 100%;
+  animation: shimmer 3s ease-in-out infinite;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-sans);
+  background: var(--color-rich-900);
+  color: #d1d5db;
+}
+
+.font-serif { font-family: var(--font-serif); }
+
+/* 缅甸几何边框图案 */
+.border-burma {
+  position: relative;
+}
+.border-burma::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--color-jade-600), var(--color-burma-400), var(--color-jade-600));
+  border-radius: 2px;
+}
+
+/* 金色细线分隔 */
+.divider-gold {
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--color-burma-400), transparent);
+  opacity: 0.3;
+}
