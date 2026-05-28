@@ -330,9 +330,9 @@ export default function HomeClient() {
 
           <div className="grid md:grid-cols-3 gap-8">
             {[
-              { title: '矿区直供', desc: '与帕敢矿区建立长期合作关系，从源头上把控品质，省去中间环节。每一块原石都经过地质专家鉴定。', icon: 'M8 3l4 8 5-5 5 15H2L8 3z' },
-              { title: '一手货源', desc: '德宏州瑞丽运营中心紧邻中缅边境，第一时间获取矿区最新开采的原石与成品，价格透明公正。', icon: 'M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4' },
-              { title: '匠心甄选', desc: '每件压箱货都经过三代翡翠世家传承人的严格甄选。不追求量，只追求质——每一件都值得传家。', icon: 'M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z' },
+              { title: '翡翠原石', desc: '与帕敢矿区建立长期合作关系，从源头上把控品质，省去中间环节。每一块原石都经过地质专家鉴定，确保天然A货。', icon: 'M8 3l4 8 5-5 5 15H2L8 3z' },
+              { title: '翡翠成品', desc: '德宏州瑞丽运营中心紧邻中缅边境，第一时间获取矿区最新开采的原石与成品。精品手镯、挂件、戒面，价格透明公正。', icon: 'M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4' },
+              { title: '私人定制', desc: '每件压箱货都经过三代翡翠世家传承人的严格甄选，并提供一对一专属定制服务。不追求量，只追求质——每一件都值得传家。', icon: 'M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z' },
             ].map((item, i) => (
               <div key={i} className="group bg-rich-800/60 border border-rich-600/50 hover:border-burma-400/20 rounded-xl p-8 transition-all duration-500">
                 <div className="w-12 h-12 rounded-lg bg-burma-400/8 border border-burma-400/15 flex items-center justify-center mb-6 group-hover:bg-burma-400/15 transition-colors">
@@ -348,7 +348,8 @@ export default function HomeClient() {
 
       {/* ═══════════ 精选藏品 ═══════════ */}
       <section className="relative py-32 border-t border-burma-400/5">
-        <BurmaOrnament className="absolute top-0 left-0 right-0" />
+        {/* 优雅金线分隔 */}
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-32 h-px bg-gradient-to-r from-transparent via-burma-400/30 to-transparent" />
         <div className="absolute top-1/3 right-0 w-[400px] h-[400px] glow-gold" />
 
         <div className="max-w-7xl mx-auto px-6 relative z-10">
