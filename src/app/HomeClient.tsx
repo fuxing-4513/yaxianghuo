@@ -369,14 +369,24 @@ export default function HomeClient() {
               { title: '翡翠成品', desc: '德宏州瑞丽运营中心紧邻中缅边境，第一时间获取矿区最新开采的原石与成品。精品手镯、挂件、戒面，价格透明公正。', icon: 'M12 2L2 7l10 5 10-5-10-5z M2 17l10 5 10-5 M2 12l10 5 10-5' },
               { title: '私人定制', desc: '每件压箱货都经过三代翡翠世家传承人的严格甄选，并提供一对一专属定制服务。不追求量，只追求质——每一件都值得传家。', icon: 'M12 2l9 4.5v9L12 22l-9-4.5v-9L12 2z M12 6v6 M9 9h6' },
             ].map((item, i) => (
-              <div key={i} className="group bg-gradient-to-br from-amber-50/70 via-cream-50/60 to-yellow-50/50 border border-amber-200/40 hover:border-amber-400/40 hover:shadow-lg hover:shadow-amber-200/30 rounded-xl p-8 transition-all duration-500">
-                <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-gold-300/25 via-amber-300/20 to-gold-400/10 border-2 border-gold-400/30 flex items-center justify-center mb-6 group-hover:border-amber-400/60 transition-all duration-300 relative overflow-hidden before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/30 before:to-transparent before:animate-shimmer before:-skew-y-6 before:translate-x-[-200%] group-hover:before:translate-x-[300%] before:transition-transform before:duration-1000 before:ease-in-out shadow-[0_0_12px_rgba(212,160,23,0.15)] group-hover:shadow-[0_0_25px_rgba(212,160,23,0.35)]">
-                  <div className="absolute -top-1 -right-1 w-3 h-3 bg-yellow-300/60 rounded-full blur-sm animate-ping-slow" />
-                  <div className="absolute -bottom-0.5 -left-0.5 w-2 h-2 bg-amber-300/40 rounded-full blur-sm animate-pulse" />
-                  <svg viewBox="0 0 24 24" className="w-6 h-6 text-amber-400 filter drop-shadow-[0_0_10px_rgba(251,191,36,0.7)]" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d={item.icon} /></svg>
+              <div key={i} className="group bg-gradient-to-br from-amber-50/80 via-cream-50/60 to-yellow-50/50 border border-amber-300/40 hover:border-amber-400/60 hover:shadow-xl hover:shadow-amber-300/30 rounded-xl p-8 transition-all duration-500">
+                <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-amber-300/30 via-yellow-300/25 to-amber-400/15 border-2 border-amber-400/40 flex items-center justify-center mb-6 group-hover:border-amber-300/70 transition-all duration-300 relative overflow-hidden shadow-[0_0_15px_rgba(251,191,36,0.25)] group-hover:shadow-[0_0_35px_rgba(251,191,36,0.5)] animate-gold-icon">
+                  {/* 旋转金色光晕层 */}
+                  <div className="absolute inset-0 bg-gradient-to-tr from-amber-300/15 via-yellow-200/20 to-amber-300/15 animate-gold-rotate" />
+                  <div className="absolute -inset-1 bg-gradient-to-br from-amber-400/10 via-transparent to-yellow-300/10 animate-gold-rotate-reverse" />
+                  {/* 闪光划过 */}
+                  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent animate-shimmer" />
+                  {/* 四角闪烁粒子 */}
+                  <div className="absolute -top-0.5 -left-0.5 w-2 h-2 bg-yellow-200/80 rounded-full animate-ping-slow" />
+                  <div className="absolute -top-0.5 -right-0.5 w-1.5 h-1.5 bg-amber-300/70 rounded-full animate-ping-slow" style={{ animationDelay: '0.5s' }} />
+                  <div className="absolute -bottom-0.5 -left-0.5 w-1.5 h-1.5 bg-yellow-200/60 rounded-full animate-ping-slow" style={{ animationDelay: '1s' }} />
+                  <div className="absolute -bottom-0.5 -right-0.5 w-2 h-2 bg-amber-300/70 rounded-full animate-ping-slow" style={{ animationDelay: '1.5s' }} />
+                  {/* 金色脉冲光环 */}
+                  <div className="absolute inset-0 rounded-xl ring-1 ring-amber-300/20 animate-gold-pulse-ring" />
+                  <svg viewBox="0 0 24 24" className="w-7 h-7 text-amber-300 drop-shadow-[0_0_12px_rgba(251,191,36,0.9)] animate-gold-svg-glow" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d={item.icon} /></svg>
                 </div>
-                <h3 className="text-lg font-serif font-bold text-amber-900 mb-3 tracking-wide">{item.title}</h3>
-                <p className="text-xs text-amber-800/70 leading-relaxed">{item.desc}</p>
+                <h3 className="text-xl font-serif font-bold text-amber-900 mb-3 tracking-wider flex items-center gap-2"><span className="inline-block w-1 h-5 bg-gradient-to-b from-amber-400 to-amber-600 rounded-full"></span>{item.title}</h3>
+                <p className="text-sm text-amber-800/80 leading-relaxed">{item.desc}</p>
               </div>
             ))}
           </div>

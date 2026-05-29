@@ -172,3 +172,30 @@ body {
 .animate-ping-slow {
   animation: ping-slow 2s cubic-bezier(0, 0, 0.2, 1) infinite;
 }
+
+/* ═══ 帕敢矿脉金闪闪动画 ═══ */
+@keyframes gold-rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+@keyframes gold-rotate-reverse {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(-360deg); }
+}
+@keyframes gold-pulse-ring {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 1; }
+}
+@keyframes gold-svg-glow {
+  0%, 100% { filter: drop-shadow(0 0 8px rgba(251,191,36,0.5)); }
+  50% { filter: drop-shadow(0 0 20px rgba(251,191,36,1)) drop-shadow(0 0 40px rgba(251,191,36,0.3)); }
+}
+@keyframes gold-icon {
+  0%, 100% { box-shadow: 0 0 15px rgba(251,191,36,0.25); }
+  50% { box-shadow: 0 0 35px rgba(251,191,36,0.5), 0 0 60px rgba(251,191,36,0.15); }
+}
+.animate-gold-rotate { animation: gold-rotate 4s linear infinite; }
+.animate-gold-rotate-reverse { animation: gold-rotate-reverse 3s linear infinite; }
+.animate-gold-pulse-ring { animation: gold-pulse-ring 2s ease-in-out infinite; }
+.animate-gold-svg-glow { animation: gold-svg-glow 1.5s ease-in-out infinite; }
+.animate-gold-icon { animation: gold-icon 2s ease-in-out infinite; }
