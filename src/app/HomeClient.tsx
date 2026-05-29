@@ -209,6 +209,14 @@ export default function HomeClient() {
     { id: 2, name: '帝王绿翡翠蛋面戒指', category: '戒面', desc: '正阳浓绿，收藏级品质', price: '¥128,000', tag: '收藏' },
     { id: 3, name: '玻璃种观音翡翠挂件', category: '挂件', desc: '通透起光，大师雕工', price: '¥45,000', tag: '孤品' },
     { id: 4, name: '莫西沙场口翡翠原石', category: '原石', desc: '皮壳老辣，赌色极品', price: '面议', tag: '矿区' },
+    { id: 5, name: '满绿翡翠如意吊坠', category: '挂件', desc: '种老色辣，水头充足', price: '¥36,000', tag: '热销' },
+    { id: 6, name: '紫罗兰翡翠手把件', category: '把件', desc: '春色浓郁，雕工精细', price: '¥52,000', tag: '孤品' },
+    { id: 7, name: '阳绿翡翠福豆套装', category: '套装', desc: '一整套福豆，粒粒饱满', price: '¥89,000', tag: '珍藏' },
+    { id: 8, name: '木那料雪花棉挂牌', category: '挂件', desc: '雪花棉飘洒，意境悠远', price: '¥28,000', tag: '精品' },
+    { id: 9, name: '高冰翡翠马鞍戒指', category: '戒面', desc: '无色透明，强烈的荧光感', price: '¥76,000', tag: '收藏' },
+    { id: 10, name: '老坑玻璃种平安扣', category: '挂件', desc: '浑圆饱满，起胶起光', price: '¥58,000', tag: '矿区' },
+    { id: 11, name: '黄翡龙牌雕件', category: '雕件', desc: '鸡油黄翡，雕刻传神', price: '¥42,000', tag: '孤品' },
+    { id: 12, name: '春带彩翡翠手镯', category: '手镯', desc: '紫绿双色，弥足珍贵', price: '¥198,000', tag: '珍藏' },
   ]
 
   return (
@@ -368,6 +376,49 @@ export default function HomeClient() {
                 </div>
                 <h3 className="text-lg font-serif font-bold text-rich-800 mb-3">{item.title}</h3>
                 <p className="text-xs text-rich-500 leading-relaxed">{item.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ═══════════ 品牌哲学 ═══════════ */}
+      <section className="relative py-32 border-t border-gold-400/5 overflow-hidden">
+        <div className="absolute inset-0 bg-gold-pattern opacity-50" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[500px] glow-gold" />
+
+        <div className="max-w-5xl mx-auto px-6 relative z-10">
+          <div className="text-center mb-16">
+            <span className="text-[11px] text-gold-400 tracking-[0.25em] uppercase">Philosophy</span>
+            <h2 className="text-3xl md:text-4xl font-serif font-bold text-rich-800 mt-4 mb-4">
+              何为<span className="text-gold-gradient">压箱货</span>
+            </h2>
+            <div className="divider-gold-center mb-6" />
+          </div>
+
+          {/* 大字排版 */}
+          <div className="space-y-8 text-center">
+            <p className="text-2xl md:text-3xl font-serif text-rich-800 leading-relaxed max-w-3xl mx-auto">
+              「古人将最珍贵的物件压于箱底，代代相传——<br />
+              <span className="text-gold-gradient">是为<span className="font-bold">压箱货</span>。</span>」
+            </p>
+            <p className="text-sm text-rich-500 leading-loose max-w-2xl mx-auto">
+              在信息喧嚣的时代，我们选择回归翡翠的本质——它不是快消品，不是投机工具，
+              而是大自然馈赠的艺术品，是刻在骨子里的东方审美，是真正值得世代传承的家族珍宝。
+            </p>
+          </div>
+
+          {/* 四柱 */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-20">
+            {[
+              { label: '真', desc: '天然A货\n绝无处理' },
+              { label: '精', desc: '万里挑一\n唯精是举' },
+              { label: '传', desc: '压箱之宝\n代代相传' },
+              { label: '信', desc: '源头直供\n价格透明' },
+            ].map((v, i) => (
+              <div key={i} className="text-center p-6 rounded-xl bg-cream-100/40 border border-cream-200/30 hover:border-gold-400/15 transition-colors">
+                <div className="text-2xl font-serif font-bold text-gold-gradient mb-2">{v.label}</div>
+                <p className="text-[11px] text-rich-400 leading-relaxed whitespace-pre-line">{v.desc}</p>
               </div>
             ))}
           </div>
@@ -553,7 +604,7 @@ export default function HomeClient() {
       </section>
 
 
-      {/* ═══════════ 品牌哲学 ═══════════ */}
+      {/* ═══════════ 精选藏品 ═══════════ */}
       <section className="relative py-32 border-t border-gold-400/5 overflow-hidden">
         <div className="absolute inset-0 bg-gold-pattern opacity-50" />
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[500px] glow-gold" />
@@ -595,6 +646,184 @@ export default function HomeClient() {
           </div>
         </div>
       </section>
+      <section className="relative py-32 border-t border-gold-400/5">
+        {/* 优雅金线分隔 */}
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-32 h-px bg-gradient-to-r from-transparent via-gold-400/30 to-transparent" />
+        <div className="absolute top-1/3 right-0 w-[400px] h-[400px] glow-gold" />
+
+        <div className="max-w-7xl mx-auto px-6 relative z-10">
+          <div className="text-center mb-20">
+            <span className="text-[11px] text-gold-400 tracking-[0.25em] uppercase">Curated Collection</span>
+            <h2 className="text-3xl md:text-4xl font-serif font-bold text-rich-800 mt-4 mb-4">精选藏品</h2>
+            <div className="divider-gold-center mb-6" />
+            <p className="text-rich-500 max-w-md mx-auto text-sm">每一件皆为压箱之宝，等待真正懂它的人</p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+            {featuredProducts.map((p, i) => (
+              <Link href="/products" key={p.id}
+                className="group bg-cream-100/80 border border-cream-200/50 rounded-xl overflow-hidden hover:border-gold-400/25 transition-all duration-500 hover:-translate-y-1 hover:shadow-2xl hover:shadow-gold-900/10">
+                {/* 产品图占位 - 翡翠氛围 */}
+                <div className="aspect-square bg-gradient-to-br from-jade-800/50 via-rich-800 to-gold-900/15 flex items-center justify-center relative overflow-hidden">
+                  <div className="absolute inset-0">
+                    <div className="absolute inset-0 bg-gradient-to-t from-rich-950/60 via-transparent to-transparent" />
+                    {/* 模拟翡翠纹理 */}
+                    <div className="absolute inset-0 opacity-10" style={{
+                      background: `radial-gradient(ellipse at ${30+i*15}% ${40+i*10}%, #34d399 0%, transparent 50%),
+                                   radial-gradient(ellipse at ${60+i*10}% ${30+i*15}%, #059669 0%, transparent 40%)`
+                    }} />
+                  </div>
+                  {/* 标签 */}
+                  {p.tag && (
+                    <span className="absolute top-3 left-3 text-[9px] bg-gold-500/80 text-rich-950 font-semibold px-2 py-0.5 rounded tracking-wider">
+                      {p.tag}
+                    </span>
+                  )}
+                  <div className="relative z-10 flex flex-col items-center">
+                    <div className="w-16 h-16 rounded-full bg-gradient-to-br from-jade-500/20 to-gold-400/10 border border-jade-500/30 flex items-center justify-center group-hover:scale-110 group-hover:border-gold-400/40 transition-all duration-500">
+                      <svg viewBox="0 0 24 24" className="w-8 h-8 text-jade-500/60" fill="currentColor">
+                        <path d="M12 2L4 8l2 4-2 4 2 4-2 4 8 6 8-6-2-4 2-4-2-4 2-4-8-6z" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div className="p-5">
+                  <div className="flex items-center justify-between mb-1">
+                    <span className="text-[10px] text-gold-400 tracking-wider uppercase">{p.category}</span>
+                    <span className="text-[10px] text-rich-300">#{String(p.id).padStart(2,'0')}</span>
+                  </div>
+                  <h3 className="text-sm font-semibold text-rich-800 group-hover:text-gold-300 transition-colors font-serif">{p.name}</h3>
+                  <p className="text-xs text-rich-400 mt-1.5">{p.desc}</p>
+                  <div className="mt-4 pt-4 border-t border-cream-200/50 flex items-center justify-between">
+                    <span className="text-sm font-bold text-gold-300">{p.price}</span>
+                    <span className="text-[10px] text-rich-400 group-hover:text-gold-400 transition-colors">查看详情 →</span>
+                  </div>
+                </div>
+              </Link>
+            ))}
+          </div>
+
+          <div className="text-center mt-14">
+            <Link href="/products"
+              className="inline-flex items-center gap-2 text-xs text-gold-400 hover:text-gold-300 border-b border-gold-400/30 hover:border-gold-400/60 pb-1 transition-colors tracking-wide">
+              查看全部藏品 <span>→</span>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* ═══════════ 翡翠知识 ═══════════ */}
+      <section className="relative py-32 border-t border-gold-400/5 overflow-hidden">
+        <div className="absolute top-0 right-0 w-[400px] h-[400px] glow-gold" />
+        <div className="absolute bottom-0 left-0 w-[300px] h-[300px] glow-jade" />
+
+        <div className="max-w-7xl mx-auto px-6 relative z-10">
+          <div className="text-center mb-20">
+            <span className="text-[11px] text-gold-400 tracking-[0.25em] uppercase">Jade Knowledge</span>
+            <h2 className="text-3xl md:text-4xl font-serif font-bold text-rich-800 mt-4 mb-4">
+              翡翠<span className="text-gold-gradient">知识</span>
+            </h2>
+            <div className="divider-gold-center mb-6" />
+            <p className="text-rich-500 max-w-xl mx-auto leading-relaxed text-sm">
+              从原矿开采到成品鉴赏，一站式了解翡翠的所有奥秘
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {[
+              {
+                title: '翡翠原石',
+                desc: '了解翡翠矿区的种类与特征。从莫西沙、帕敢老场口到木那料，每一场口的皮壳特征、种水质地、色脉走向都大有讲究。学习如何通过皮壳、松花、蟒带等特征判断原石内部品质。',
+                icon: 'M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z',
+                href: '#'
+              },
+              {
+                title: '翡翠成品',
+                desc: '手镯、挂件、戒面、摆件——翡翠成品的品鉴之道。什么是种老水长？什么是起荧光？帝王绿与正阳绿的区别何在？手镯的口径与圈形如何选择？从这里开始你的翡翠鉴赏之路。',
+                icon: 'M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4',
+                href: '#'
+              },
+              {
+                title: '保养收藏',
+                desc: '翡翠的保养与收藏是一门学问。如何正确清洗与存放？为什么要定期"补水"？怎样辨别翡翠的真伪与优化处理？收藏级别的翡翠需要满足哪些硬性指标？掌握这些知识，做个懂行的藏家。',
+                icon: 'M19 21l-7-5-7 5V5a2 2 0 012-2h10a2 2 0 012 2v16z',
+                href: '#'
+              },
+            ].map((item, i) => (
+              <div key={i} className="group bg-cream-100/60 border border-cream-200/50 hover:border-gold-400/20 rounded-xl p-8 transition-all duration-500">
+                <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-jade-500/10 to-jade-500/5 border border-jade-500/15 flex items-center justify-center mb-6 group-hover:border-jade-500/30 transition-colors">
+                  <svg viewBox="0 0 24 24" className="w-5 h-5 text-jade-500" fill="none" stroke="currentColor" strokeWidth="1.5"><path d={item.icon} /></svg>
+                </div>
+                <h3 className="text-lg font-serif font-bold text-rich-800 mb-3">{item.title}</h3>
+                <p className="text-xs text-rich-500 leading-relaxed mb-6">{item.desc}</p>
+                <Link href={item.href}
+                  className="text-[10px] text-gold-400 hover:text-gold-300 tracking-wider border-b border-gold-400/30 pb-0.5 transition-colors">
+                  了解更多 →
+                </Link>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+      {/* ═══════════ 新闻中心 ═══════════ */}
+      <section className="relative py-32 border-t border-gold-400/5 overflow-hidden">
+        <div className="absolute top-1/3 left-0 w-[350px] h-[350px] glow-gold" />
+        <div className="absolute bottom-0 right-0 w-[250px] h-[250px] glow-jade" />
+
+        <div className="max-w-7xl mx-auto px-6 relative z-10">
+          <div className="text-center mb-20">
+            <span className="text-[11px] text-gold-400 tracking-[0.25em] uppercase">News</span>
+            <h2 className="text-3xl md:text-4xl font-serif font-bold text-rich-800 mt-4 mb-4">
+              新闻<span className="text-gold-gradient">中心</span>
+            </h2>
+            <div className="divider-gold-center mb-6" />
+            <p className="text-rich-500 max-w-xl mx-auto leading-relaxed text-sm">
+              关注翡翠行业最新动态，从缅甸源头到国内市场一网打尽
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {[
+              {
+                title: '缅甸源头',
+                desc: '帕敢矿区最新开采动态、缅甸政府翡翠政策变化、瓦城（曼德勒）翡翠交易市场行情。第一时间掌握源头信息，把握投资先机。',
+                date: '实时更新',
+                tag: '矿区',
+                icon: 'M12 2l9 7v12H3V9l9-7z',
+              },
+              {
+                title: '国内玉市',
+                desc: '揭阳阳美、四会天光墟、平洲玉器街、瑞丽姐告——全国主要翡翠交易市场的行情走势与价格分析。为您的收藏与投资提供参考。',
+                date: '每周行情',
+                tag: '市场',
+                icon: 'M2 12l10-5 10 5-10 5-10-5z M2 17l10 5 10-5 M2 7l10 5 10-5',
+              },
+              {
+                title: '珠宝动向',
+                desc: '全球珠宝拍卖会动态、翡翠设计新趋势、名人收藏故事。从保利到佳士得，从传统工艺到当代设计，深度解读翡翠文化的时尚演变。',
+                date: '行业资讯',
+                tag: '动向',
+                icon: 'M5 3h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2z M9 3v18 M15 3v18 M3 9h18 M3 15h18',
+              },
+            ].map((item, i) => (
+              <div key={i} className="group bg-cream-100/60 border border-cream-200/50 hover:border-gold-400/20 rounded-xl p-8 transition-all duration-500 relative">
+                <span className="absolute top-4 right-4 text-[9px] bg-gold-500/80 text-rich-950 font-semibold px-2 py-0.5 rounded tracking-wider">{item.tag}</span>
+                <div className="w-10 h-10 rounded-lg bg-gold-400/8 border border-gold-400/15 flex items-center justify-center mb-5 group-hover:bg-gold-400/15 transition-colors">
+                  <svg viewBox="0 0 24 24" className="w-4 h-4 text-gold-400" fill="none" stroke="currentColor" strokeWidth="1.5"><path d={item.icon} /></svg>
+                </div>
+                <p className="text-[10px] text-gold-400 tracking-wider mb-2">{item.date}</p>
+                <h3 className="text-lg font-serif font-bold text-rich-800 mb-3">{item.title}</h3>
+                <p className="text-xs text-rich-500 leading-relaxed mb-4">{item.desc}</p>
+                <span className="text-[10px] text-gold-400/60 group-hover:text-gold-400 transition-colors cursor-pointer border-b border-gold-400/20 pb-0.5">
+                  阅读更多 →
+                </span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+
 
       {/* ═══════════ 预约私洽 ═══════════ */}
       <section className="relative py-32 border-t border-gold-400/5 overflow-hidden">
