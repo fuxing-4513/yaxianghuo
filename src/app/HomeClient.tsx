@@ -365,17 +365,18 @@ export default function HomeClient() {
 
           <div className="grid md:grid-cols-3 gap-8">
             {[
-              { title: '翡翠原石', desc: '与帕敢矿区建立长期合作关系，从源头上把控品质，省去中间环节。每一块原石都经过地质专家鉴定，确保天然A货。', icon: 'M8 3l4 8 5-5 5 15H2L8 3z' },
-              { title: '翡翠成品', desc: '德宏州瑞丽运营中心紧邻中缅边境，第一时间获取矿区最新开采的原石与成品。精品手镯、挂件、戒面，价格透明公正。', icon: 'M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4' },
-              { title: '私人定制', desc: '每件压箱货都经过三代翡翠世家传承人的严格甄选，并提供一对一专属定制服务。不追求量，只追求质——每一件都值得传家。', icon: 'M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z' },
+              { title: '翡翠原石', desc: '与帕敢矿区建立长期合作关系，从源头上把控品质，省去中间环节。每一块原石都经过地质专家鉴定，确保天然A货。', icon: 'M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z M14 2v6h6 M12 12v4 M10 14h4' },
+              { title: '翡翠成品', desc: '德宏州瑞丽运营中心紧邻中缅边境，第一时间获取矿区最新开采的原石与成品。精品手镯、挂件、戒面，价格透明公正。', icon: 'M12 2L2 7l10 5 10-5-10-5z M2 17l10 5 10-5 M2 12l10 5 10-5' },
+              { title: '私人定制', desc: '每件压箱货都经过三代翡翠世家传承人的严格甄选，并提供一对一专属定制服务。不追求量，只追求质——每一件都值得传家。', icon: 'M12 2l9 4.5v9L12 22l-9-4.5v-9L12 2z M12 6v6 M9 9h6' },
             ].map((item, i) => (
-              <div key={i} className="group bg-cream-100/60 border border-cream-200/50 hover:border-gold-400/20 rounded-xl p-8 transition-all duration-500">
-                <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-gold-400/15 to-gold-400/5 border border-gold-400/20 flex items-center justify-center mb-6 group-hover:border-gold-400/40 transition-colors relative overflow-hidden animate-gold-shimmer">
-                  <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/10 to-transparent animate-shimmer" />
-                  <svg viewBox="0 0 24 24" className="w-5 h-5 text-gold-400 filter drop-shadow-[0_0_6px_rgba(212,160,23,0.6)]" fill="none" stroke="currentColor" strokeWidth="1.5"><path d={item.icon} /></svg>
+              <div key={i} className="group bg-gradient-to-br from-amber-50/70 via-cream-50/60 to-yellow-50/50 border border-amber-200/40 hover:border-amber-400/40 hover:shadow-lg hover:shadow-amber-200/30 rounded-xl p-8 transition-all duration-500">
+                <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-gold-300/25 via-amber-300/20 to-gold-400/10 border-2 border-gold-400/30 flex items-center justify-center mb-6 group-hover:border-amber-400/60 transition-all duration-300 relative overflow-hidden before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/30 before:to-transparent before:animate-shimmer before:-skew-y-6 before:translate-x-[-200%] group-hover:before:translate-x-[300%] before:transition-transform before:duration-1000 before:ease-in-out shadow-[0_0_12px_rgba(212,160,23,0.15)] group-hover:shadow-[0_0_25px_rgba(212,160,23,0.35)]">
+                  <div className="absolute -top-1 -right-1 w-3 h-3 bg-yellow-300/60 rounded-full blur-sm animate-ping-slow" />
+                  <div className="absolute -bottom-0.5 -left-0.5 w-2 h-2 bg-amber-300/40 rounded-full blur-sm animate-pulse" />
+                  <svg viewBox="0 0 24 24" className="w-6 h-6 text-amber-400 filter drop-shadow-[0_0_10px_rgba(251,191,36,0.7)]" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d={item.icon} /></svg>
                 </div>
-                <h3 className="text-lg font-serif font-bold text-rich-800 mb-3">{item.title}</h3>
-                <p className="text-xs text-rich-500 leading-relaxed">{item.desc}</p>
+                <h3 className="text-lg font-serif font-bold text-amber-900 mb-3 tracking-wide">{item.title}</h3>
+                <p className="text-xs text-amber-800/70 leading-relaxed">{item.desc}</p>
               </div>
             ))}
           </div>
