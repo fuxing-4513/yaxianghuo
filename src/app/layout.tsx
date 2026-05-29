@@ -24,19 +24,19 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         <link rel="preconnect" href="https://fonts.gstatic.com" />
       </head>
-      <body className="min-h-full flex flex-col bg-rich-950 text-gray-300">
+      <body className="min-h-full flex flex-col bg-cream-50 text-rich-600">
         {/* 全局导航 */}
-        <nav className="fixed top-0 left-0 right-0 z-50 bg-rich-950/85 backdrop-blur-xl border-b border-burma-400/8">
+        <nav className="fixed top-0 left-0 right-0 z-50 bg-cream-50/85 backdrop-blur-xl border-b border-gold-400/8">
           <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
             <Link href="/" className="flex items-center gap-2.5 group">
-              <PagodaIcon className="w-5 h-6 text-burma-400 group-hover:text-burma-300 transition-colors" />
-              <span className="text-lg font-bold font-serif text-burma-300 tracking-[0.15em] group-hover:text-burma-200 transition-colors">压箱货</span>
+              <PagodaIcon className="w-5 h-6 text-gold-400 group-hover:text-gold-300 transition-colors" />
+              <span className="text-lg font-bold font-serif text-gold-300 tracking-[0.15em] group-hover:text-gold-200 transition-colors">压箱货</span>
             </Link>
             <div className="hidden md:flex items-center gap-10">
-              <Link href="/" className="text-xs text-ivory-100 hover:text-burma-300 transition-colors tracking-wide">首页</Link>
-              <Link href="/products" className="text-xs text-gray-400 hover:text-burma-300 transition-colors tracking-wide">精品翡翠</Link>
-              <Link href="/about" className="text-xs text-gray-400 hover:text-burma-300 transition-colors tracking-wide">关于我们</Link>
-              <Link href="/about#contact" className="text-xs bg-burma-600/20 border border-burma-500/30 text-burma-300 hover:bg-burma-600/40 px-5 py-1.5 rounded transition-colors tracking-wide">
+              <Link href="/" className="text-xs text-rich-800 hover:text-gold-300 transition-colors tracking-wide">首页</Link>
+              <Link href="/products" className="text-xs text-rich-500 hover:text-gold-300 transition-colors tracking-wide">精品翡翠</Link>
+              <Link href="/about" className="text-xs text-rich-500 hover:text-gold-300 transition-colors tracking-wide">关于我们</Link>
+              <Link href="/about#contact" className="text-xs bg-gold-600/20 border border-gold-500/30 text-gold-300 hover:bg-gold-600/40 px-5 py-1.5 rounded transition-colors tracking-wide">
                 预约私洽
               </Link>
             </div>

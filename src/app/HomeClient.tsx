@@ -192,9 +192,9 @@ function BurmaOrnament({ className }: { className?: string }) {
 function GoldRings() {
   return (
     <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-      <div className="w-72 h-72 rounded-full border border-burma-400/5 animate-spin-slow" />
-      <div className="absolute w-64 h-64 rounded-full border border-burma-400/8 animate-spin-slow" style={{ animationDirection: 'reverse', animationDuration: '40s' }} />
-      <div className="absolute w-56 h-56 rounded-full border border-burma-400/10 animate-spin-slow" style={{ animationDuration: '50s' }} />
+      <div className="w-72 h-72 rounded-full border border-gold-400/5 animate-spin-slow" />
+      <div className="absolute w-64 h-64 rounded-full border border-gold-400/8 animate-spin-slow" style={{ animationDirection: 'reverse', animationDuration: '40s' }} />
+      <div className="absolute w-56 h-56 rounded-full border border-gold-400/10 animate-spin-slow" style={{ animationDuration: '50s' }} />
     </div>
   )
 }
@@ -212,11 +212,11 @@ export default function HomeClient() {
   ]
 
   return (
-    <div className="relative overflow-hidden bg-rich-950">
+    <div className="relative overflow-hidden bg-cream-50">
       {/* ═══════════ HERO ═══════════ */}
       <section className="relative min-h-screen flex items-center overflow-hidden">
         {/* 背景层 */}
-        <div className="absolute inset-0 bg-burma-pattern" />
+        <div className="absolute inset-0 bg-gold-pattern" />
         <div className="absolute top-0 right-0 w-[600px] h-[600px] glow-gold" />
         <div className="absolute bottom-0 left-0 w-[500px] h-[400px] glow-jade" />
 
@@ -250,48 +250,48 @@ export default function HomeClient() {
             {/* 左栏 - 文字 */}
             <div>
               {/* 品牌徽章 */}
-              <div className="inline-flex items-center gap-2.5 bg-burma-400/8 border border-burma-400/15 rounded-full px-5 py-2 mb-8 animate-fade-up">
+              <div className="inline-flex items-center gap-2.5 bg-gold-400/8 border border-gold-400/15 rounded-full px-5 py-2 mb-8 animate-fade-up">
                 <div className="w-1.5 h-1.5 rounded-full bg-jade-400 animate-gold-pulse" />
-                <span className="text-[11px] text-burma-300 tracking-[0.15em] uppercase">缅甸帕敢矿区 · 德宏直营</span>
+                <span className="text-[11px] text-gold-300 tracking-[0.15em] uppercase">缅甸帕敢矿区 · 德宏直营</span>
               </div>
 
               {/* 主标题 */}
               <h1 className="font-serif font-bold leading-[1.1] mb-6 animate-fade-up a-delay-1">
-                <span className="block text-5xl md:text-6xl lg:text-7xl text-ivory-50 mb-2">压箱之宝</span>
+                <span className="block text-5xl md:text-6xl lg:text-7xl text-rich-800 mb-2">压箱之宝</span>
                 <span className="block text-4xl md:text-5xl lg:text-6xl text-gold-gradient">翡翠传家</span>
               </h1>
 
               {/* 副标题 */}
-              <p className="text-lg text-gray-300/80 leading-relaxed mb-3 max-w-md animate-fade-up a-delay-2">
+              <p className="text-lg text-rich-600/80 leading-relaxed mb-3 max-w-md animate-fade-up a-delay-2">
                 源自缅甸帕敢翡翠矿区，每一块原石都历经亿万年的地质淬炼。
               </p>
-              <p className="text-sm text-gray-500 leading-relaxed mb-10 max-w-md animate-fade-up a-delay-3">
+              <p className="text-sm text-rich-400 leading-relaxed mb-10 max-w-md animate-fade-up a-delay-3">
                 我们在中缅边境德宏州设立品牌运营中心，将矿区一手货源，呈现给真正懂得翡翠之美的藏家。
               </p>
 
               {/* CTA */}
               <div className="flex gap-4 animate-fade-up a-delay-4">
                 <Link href="/products"
-                  className="group relative bg-burma-500 hover:bg-burma-400 text-rich-950 font-semibold px-8 py-3.5 rounded transition-all duration-300 tracking-wide overflow-hidden">
+                  className="group relative bg-gold-500 hover:bg-gold-400 text-rich-950 font-semibold px-8 py-3.5 rounded transition-all duration-300 tracking-wide overflow-hidden">
                   <span className="relative z-10 text-sm">探索精品翡翠</span>
                   <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700" />
                 </Link>
                 <Link href="/about#contact"
-                  className="relative border border-burma-400/25 text-burma-300 hover:text-burma-200 hover:border-burma-400/50 px-8 py-3.5 rounded transition-all duration-300 tracking-wide text-sm">
+                  className="relative border border-gold-400/25 text-gold-300 hover:text-gold-200 hover:border-gold-400/50 px-8 py-3.5 rounded transition-all duration-300 tracking-wide text-sm">
                   <span>预约私洽</span>
                 </Link>
               </div>
 
               {/* 信任标识 */}
-              <div className="flex gap-8 mt-12 pt-8 border-t border-burma-400/8 animate-fade-up a-delay-5">
+              <div className="flex gap-8 mt-12 pt-8 border-t border-gold-400/8 animate-fade-up a-delay-5">
                 {[
                   { num: '12+', label: '年矿区深耕' },
                   { num: '500+', label: '件传家藏品' },
                   { num: '100%', label: '天然A货' },
                 ].map((s, i) => (
                   <div key={i}>
-                    <p className="text-xl font-bold text-burma-400 font-serif">{s.num}</p>
-                    <p className="text-[10px] text-gray-500 mt-1 tracking-wide">{s.label}</p>
+                    <p className="text-xl font-bold text-gold-400 font-serif">{s.num}</p>
+                    <p className="text-[10px] text-rich-400 mt-1 tracking-wide">{s.label}</p>
                   </div>
                 ))}
               </div>
@@ -300,7 +300,7 @@ export default function HomeClient() {
             {/* 右栏 - 仰光大金塔真实照片 */}
             <div className="hidden lg:flex items-center justify-center animate-scale-in a-delay-3">
               <div className="relative">
-                <div className="w-52 h-72 rounded-xl overflow-hidden shadow-2xl shadow-burma-900/40 border border-burma-400/15"
+                <div className="w-52 h-72 rounded-xl overflow-hidden shadow-2xl shadow-gold-900/40 border border-gold-400/15"
                   style={{
                     backgroundImage: `url(https://upload.wikimedia.org/wikipedia/commons/b/b1/20160813_Shwedagon_Pagoda_9949_DxO.jpg)`,
                     backgroundSize: 'cover',
@@ -308,12 +308,12 @@ export default function HomeClient() {
                   }}>
                   {/* 金色渐变叠加 - 保持品牌调性 */}
                   <div className="absolute inset-0 bg-gradient-to-t from-rich-950/70 via-rich-950/20 to-transparent" />
-                  <div className="absolute inset-0 bg-gradient-to-br from-burma-400/15 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-br from-gold-400/15 to-transparent" />
                 </div>
                 {/* 环绕装饰环 */}
                 <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                  <div className="w-[calc(100%+32px)] h-[calc(100%+32px)] rounded-xl border border-burma-400/10 animate-spin-slow" style={{ animationDuration: '35s' }} />
-                  <div className="absolute w-[calc(100%+48px)] h-[calc(100%+48px)] rounded-xl border border-burma-400/6 animate-spin-slow" style={{ animationDuration: '45s', animationDirection: 'reverse' }} />
+                  <div className="w-[calc(100%+32px)] h-[calc(100%+32px)] rounded-xl border border-gold-400/10 animate-spin-slow" style={{ animationDuration: '35s' }} />
+                  <div className="absolute w-[calc(100%+48px)] h-[calc(100%+48px)] rounded-xl border border-gold-400/6 animate-spin-slow" style={{ animationDuration: '45s', animationDirection: 'reverse' }} />
                 </div>
               </div>
             </div>
@@ -323,8 +323,8 @@ export default function HomeClient() {
         {/* 向下滚动提示 */}
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-float">
           <div className="flex flex-col items-center gap-2">
-            <span className="text-[10px] text-gray-600 tracking-[0.2em]">向下探索</span>
-            <div className="w-px h-6 bg-gradient-to-b from-burma-400/40 to-transparent" />
+            <span className="text-[10px] text-rich-300 tracking-[0.2em]">向下探索</span>
+            <div className="w-px h-6 bg-gradient-to-b from-gold-400/40 to-transparent" />
           </div>
         </div>
       </section>
@@ -344,12 +344,12 @@ export default function HomeClient() {
 
         <div className="max-w-7xl mx-auto px-6 relative z-10">
           <div className="text-center mb-20">
-            <span className="text-[11px] text-burma-400 tracking-[0.25em] uppercase">The Origin</span>
-            <h2 className="text-3xl md:text-4xl font-serif font-bold text-ivory-50 mt-4 mb-4">
+            <span className="text-[11px] text-gold-400 tracking-[0.25em] uppercase">The Origin</span>
+            <h2 className="text-3xl md:text-4xl font-serif font-bold text-rich-800 mt-4 mb-4">
               帕敢矿脉<span className="text-gold-gradient"> · </span>翡翠之源
             </h2>
             <div className="divider-gold-center mb-6" />
-            <p className="text-gray-400 max-w-2xl mx-auto leading-relaxed text-sm">
+            <p className="text-rich-500 max-w-2xl mx-auto leading-relaxed text-sm">
               缅甸帕敢（Hpakant）——全球最优质的翡翠矿区。这里出产的翡翠，以其色泽浓郁、质地细腻而闻名于世。
               每一块从帕敢走出的翡翠，都承载着这片土地亿万年地质运动的记忆。
             </p>
@@ -361,12 +361,12 @@ export default function HomeClient() {
               { title: '翡翠成品', desc: '德宏州瑞丽运营中心紧邻中缅边境，第一时间获取矿区最新开采的原石与成品。精品手镯、挂件、戒面，价格透明公正。', icon: 'M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4' },
               { title: '私人定制', desc: '每件压箱货都经过三代翡翠世家传承人的严格甄选，并提供一对一专属定制服务。不追求量，只追求质——每一件都值得传家。', icon: 'M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z' },
             ].map((item, i) => (
-              <div key={i} className="group bg-rich-800/60 border border-rich-600/50 hover:border-burma-400/20 rounded-xl p-8 transition-all duration-500">
-                <div className="w-12 h-12 rounded-lg bg-burma-400/8 border border-burma-400/15 flex items-center justify-center mb-6 group-hover:bg-burma-400/15 transition-colors">
-                  <svg viewBox="0 0 24 24" className="w-5 h-5 text-burma-400" fill="none" stroke="currentColor" strokeWidth="1.5"><path d={item.icon} /></svg>
+              <div key={i} className="group bg-cream-100/60 border border-cream-200/50 hover:border-gold-400/20 rounded-xl p-8 transition-all duration-500">
+                <div className="w-12 h-12 rounded-lg bg-gold-400/8 border border-gold-400/15 flex items-center justify-center mb-6 group-hover:bg-gold-400/15 transition-colors">
+                  <svg viewBox="0 0 24 24" className="w-5 h-5 text-gold-400" fill="none" stroke="currentColor" strokeWidth="1.5"><path d={item.icon} /></svg>
                 </div>
-                <h3 className="text-lg font-serif font-bold text-ivory-100 mb-3">{item.title}</h3>
-                <p className="text-xs text-gray-400 leading-relaxed">{item.desc}</p>
+                <h3 className="text-lg font-serif font-bold text-rich-800 mb-3">{item.title}</h3>
+                <p className="text-xs text-rich-500 leading-relaxed">{item.desc}</p>
               </div>
             ))}
           </div>
@@ -374,25 +374,25 @@ export default function HomeClient() {
       </section>
 
       {/* ═══════════ 精选藏品 ═══════════ */}
-      <section className="relative py-32 border-t border-burma-400/5">
+      <section className="relative py-32 border-t border-gold-400/5">
         {/* 优雅金线分隔 */}
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-32 h-px bg-gradient-to-r from-transparent via-burma-400/30 to-transparent" />
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-32 h-px bg-gradient-to-r from-transparent via-gold-400/30 to-transparent" />
         <div className="absolute top-1/3 right-0 w-[400px] h-[400px] glow-gold" />
 
         <div className="max-w-7xl mx-auto px-6 relative z-10">
           <div className="text-center mb-20">
-            <span className="text-[11px] text-burma-400 tracking-[0.25em] uppercase">Curated Collection</span>
-            <h2 className="text-3xl md:text-4xl font-serif font-bold text-ivory-50 mt-4 mb-4">精选藏品</h2>
+            <span className="text-[11px] text-gold-400 tracking-[0.25em] uppercase">Curated Collection</span>
+            <h2 className="text-3xl md:text-4xl font-serif font-bold text-rich-800 mt-4 mb-4">精选藏品</h2>
             <div className="divider-gold-center mb-6" />
-            <p className="text-gray-400 max-w-md mx-auto text-sm">每一件皆为压箱之宝，等待真正懂它的人</p>
+            <p className="text-rich-500 max-w-md mx-auto text-sm">每一件皆为压箱之宝，等待真正懂它的人</p>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {featuredProducts.map((p, i) => (
               <Link href="/products" key={p.id}
-                className="group bg-rich-800/80 border border-rich-600/50 rounded-xl overflow-hidden hover:border-burma-400/25 transition-all duration-500 hover:-translate-y-1 hover:shadow-2xl hover:shadow-burma-900/10">
+                className="group bg-cream-100/80 border border-cream-200/50 rounded-xl overflow-hidden hover:border-gold-400/25 transition-all duration-500 hover:-translate-y-1 hover:shadow-2xl hover:shadow-gold-900/10">
                 {/* 产品图占位 - 翡翠氛围 */}
-                <div className="aspect-square bg-gradient-to-br from-jade-950/50 via-rich-800 to-burma-900/15 flex items-center justify-center relative overflow-hidden">
+                <div className="aspect-square bg-gradient-to-br from-jade-950/50 via-rich-800 to-gold-900/15 flex items-center justify-center relative overflow-hidden">
                   <div className="absolute inset-0">
                     <div className="absolute inset-0 bg-gradient-to-t from-rich-950/60 via-transparent to-transparent" />
                     {/* 模拟翡翠纹理 */}
@@ -403,12 +403,12 @@ export default function HomeClient() {
                   </div>
                   {/* 标签 */}
                   {p.tag && (
-                    <span className="absolute top-3 left-3 text-[9px] bg-burma-500/80 text-rich-950 font-semibold px-2 py-0.5 rounded tracking-wider">
+                    <span className="absolute top-3 left-3 text-[9px] bg-gold-500/80 text-rich-950 font-semibold px-2 py-0.5 rounded tracking-wider">
                       {p.tag}
                     </span>
                   )}
                   <div className="relative z-10 flex flex-col items-center">
-                    <div className="w-16 h-16 rounded-full bg-gradient-to-br from-jade-400/20 to-burma-400/10 border border-jade-500/30 flex items-center justify-center group-hover:scale-110 group-hover:border-burma-400/40 transition-all duration-500">
+                    <div className="w-16 h-16 rounded-full bg-gradient-to-br from-jade-400/20 to-gold-400/10 border border-jade-500/30 flex items-center justify-center group-hover:scale-110 group-hover:border-gold-400/40 transition-all duration-500">
                       <svg viewBox="0 0 24 24" className="w-8 h-8 text-jade-400/60" fill="currentColor">
                         <path d="M12 2L4 8l2 4-2 4 2 4-2 4 8 6 8-6-2-4 2-4-2-4 2-4-8-6z" />
                       </svg>
@@ -417,14 +417,14 @@ export default function HomeClient() {
                 </div>
                 <div className="p-5">
                   <div className="flex items-center justify-between mb-1">
-                    <span className="text-[10px] text-burma-400 tracking-wider uppercase">{p.category}</span>
-                    <span className="text-[10px] text-gray-600">#{String(p.id).padStart(2,'0')}</span>
+                    <span className="text-[10px] text-gold-400 tracking-wider uppercase">{p.category}</span>
+                    <span className="text-[10px] text-rich-300">#{String(p.id).padStart(2,'0')}</span>
                   </div>
-                  <h3 className="text-sm font-semibold text-ivory-100 group-hover:text-burma-300 transition-colors font-serif">{p.name}</h3>
-                  <p className="text-xs text-gray-500 mt-1.5">{p.desc}</p>
-                  <div className="mt-4 pt-4 border-t border-rich-600/50 flex items-center justify-between">
-                    <span className="text-sm font-bold text-burma-300">{p.price}</span>
-                    <span className="text-[10px] text-gray-500 group-hover:text-burma-400 transition-colors">查看详情 →</span>
+                  <h3 className="text-sm font-semibold text-rich-800 group-hover:text-gold-300 transition-colors font-serif">{p.name}</h3>
+                  <p className="text-xs text-rich-400 mt-1.5">{p.desc}</p>
+                  <div className="mt-4 pt-4 border-t border-cream-200/50 flex items-center justify-between">
+                    <span className="text-sm font-bold text-gold-300">{p.price}</span>
+                    <span className="text-[10px] text-rich-400 group-hover:text-gold-400 transition-colors">查看详情 →</span>
                   </div>
                 </div>
               </Link>
@@ -433,7 +433,7 @@ export default function HomeClient() {
 
           <div className="text-center mt-14">
             <Link href="/products"
-              className="inline-flex items-center gap-2 text-xs text-burma-400 hover:text-burma-300 border-b border-burma-400/30 hover:border-burma-400/60 pb-1 transition-colors tracking-wide">
+              className="inline-flex items-center gap-2 text-xs text-gold-400 hover:text-gold-300 border-b border-gold-400/30 hover:border-gold-400/60 pb-1 transition-colors tracking-wide">
               查看全部藏品 <span>→</span>
             </Link>
           </div>
@@ -441,14 +441,14 @@ export default function HomeClient() {
       </section>
 
       {/* ═══════════ 品牌哲学 ═══════════ */}
-      <section className="relative py-32 border-t border-burma-400/5 overflow-hidden">
-        <div className="absolute inset-0 bg-burma-pattern opacity-50" />
+      <section className="relative py-32 border-t border-gold-400/5 overflow-hidden">
+        <div className="absolute inset-0 bg-gold-pattern opacity-50" />
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[500px] glow-gold" />
 
         <div className="max-w-5xl mx-auto px-6 relative z-10">
           <div className="text-center mb-16">
-            <span className="text-[11px] text-burma-400 tracking-[0.25em] uppercase">Philosophy</span>
-            <h2 className="text-3xl md:text-4xl font-serif font-bold text-ivory-50 mt-4 mb-4">
+            <span className="text-[11px] text-gold-400 tracking-[0.25em] uppercase">Philosophy</span>
+            <h2 className="text-3xl md:text-4xl font-serif font-bold text-rich-800 mt-4 mb-4">
               何为<span className="text-gold-gradient">压箱货</span>
             </h2>
             <div className="divider-gold-center mb-6" />
@@ -456,11 +456,11 @@ export default function HomeClient() {
 
           {/* 大字排版 */}
           <div className="space-y-8 text-center">
-            <p className="text-2xl md:text-3xl font-serif text-ivory-100 leading-relaxed max-w-3xl mx-auto">
+            <p className="text-2xl md:text-3xl font-serif text-rich-800 leading-relaxed max-w-3xl mx-auto">
               「古人将最珍贵的物件压于箱底，代代相传——<br />
               <span className="text-gold-gradient">是为<span className="font-bold">压箱货</span>。</span>」
             </p>
-            <p className="text-sm text-gray-400 leading-loose max-w-2xl mx-auto">
+            <p className="text-sm text-rich-500 leading-loose max-w-2xl mx-auto">
               在信息喧嚣的时代，我们选择回归翡翠的本质——它不是快消品，不是投机工具，
               而是大自然馈赠的艺术品，是刻在骨子里的东方审美，是真正值得世代传承的家族珍宝。
             </p>
@@ -474,9 +474,9 @@ export default function HomeClient() {
               { label: '传', desc: '压箱之宝\n代代相传' },
               { label: '信', desc: '源头直供\n价格透明' },
             ].map((v, i) => (
-              <div key={i} className="text-center p-6 rounded-xl bg-rich-800/40 border border-rich-600/30 hover:border-burma-400/15 transition-colors">
+              <div key={i} className="text-center p-6 rounded-xl bg-cream-100/40 border border-cream-200/30 hover:border-gold-400/15 transition-colors">
                 <div className="text-2xl font-serif font-bold text-gold-gradient mb-2">{v.label}</div>
-                <p className="text-[11px] text-gray-500 leading-relaxed whitespace-pre-line">{v.desc}</p>
+                <p className="text-[11px] text-rich-400 leading-relaxed whitespace-pre-line">{v.desc}</p>
               </div>
             ))}
           </div>
@@ -484,7 +484,7 @@ export default function HomeClient() {
       </section>
 
       {/* ═══════════ 预约私洽 ═══════════ */}
-      <section className="relative py-32 border-t border-burma-400/5 overflow-hidden">
+      <section className="relative py-32 border-t border-gold-400/5 overflow-hidden">
         {/* 帕敢翡翠矿山真实照片背景 */}
         <div className="absolute inset-0 opacity-[0.06]"
           style={{
@@ -496,18 +496,18 @@ export default function HomeClient() {
         />
 
         <div className="max-w-4xl mx-auto px-6 text-center relative z-10">
-          <span className="text-[11px] text-burma-400 tracking-[0.25em] uppercase">Private Consultation</span>
-          <h2 className="text-3xl md:text-4xl font-serif font-bold text-ivory-50 mt-4 mb-8">预约私洽</h2>
-          <p className="text-gray-400 text-sm mb-12 max-w-lg mx-auto leading-relaxed">
+          <span className="text-[11px] text-gold-400 tracking-[0.25em] uppercase">Private Consultation</span>
+          <h2 className="text-3xl md:text-4xl font-serif font-bold text-rich-800 mt-4 mb-8">预约私洽</h2>
+          <p className="text-rich-500 text-sm mb-12 max-w-lg mx-auto leading-relaxed">
             每一件压箱货都有它的故事。我们提供一对一专属私洽服务，为您寻找最契合的那一件传家之宝。
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/about#contact"
-              className="bg-burma-500 hover:bg-burma-400 text-rich-950 font-semibold px-10 py-3.5 rounded transition-colors tracking-wide text-sm">
+              className="bg-gold-500 hover:bg-gold-400 text-rich-950 font-semibold px-10 py-3.5 rounded transition-colors tracking-wide text-sm">
               预约咨询
             </Link>
             <Link href="/products"
-              className="border border-burma-400/25 text-burma-300 hover:bg-burma-400/8 px-10 py-3.5 rounded transition-colors tracking-wide text-sm">
+              className="border border-gold-400/25 text-gold-300 hover:bg-gold-400/8 px-10 py-3.5 rounded transition-colors tracking-wide text-sm">
               浏览藏品
             </Link>
           </div>
@@ -515,20 +515,20 @@ export default function HomeClient() {
       </section>
 
       {/* ═══════════ Footer ═══════════ */}
-      <footer className="bg-rich-950 border-t border-burma-400/8">
+      <footer className="bg-cream-50 border-t border-gold-400/8">
         <div className="max-w-7xl mx-auto px-6 py-20">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
             {/* 品牌 */}
             <div className="md:col-span-1">
               <div className="flex items-center gap-2.5 mb-6">
-                <svg viewBox="0 0 24 28" className="w-5 h-6 text-burma-400" fill="none">
+                <svg viewBox="0 0 24 28" className="w-5 h-6 text-gold-400" fill="none">
                   <path d="M12 1L3 12H21L12 1Z" fill="currentColor" opacity="0.9"/>
                   <path d="M4 12h16l-3 8H7l-3-8Z" fill="currentColor" opacity="0.7"/>
                   <path d="M7 20h10l-2 7H9l-2-7Z" fill="currentColor" opacity="0.5"/>
                 </svg>
-                <span className="text-lg font-bold font-serif text-burma-300 tracking-[0.15em]">压箱货</span>
+                <span className="text-lg font-bold font-serif text-gold-300 tracking-[0.15em]">压箱货</span>
               </div>
-              <p className="text-xs text-gray-500 leading-relaxed">
+              <p className="text-xs text-rich-400 leading-relaxed">
                 源自缅甸帕敢矿区<br />
                 兴于中缅边境德宏<br />
                 压箱之宝，翡翠传家
@@ -537,7 +537,7 @@ export default function HomeClient() {
 
             {/* 导航 */}
             <div>
-              <h4 className="text-xs font-semibold text-ivory-100 mb-5 tracking-wide uppercase">导览</h4>
+              <h4 className="text-xs font-semibold text-rich-800 mb-5 tracking-wide uppercase">导览</h4>
               <div className="space-y-3">
                 {[
                   { label: '首页', href: '/' },
@@ -545,36 +545,36 @@ export default function HomeClient() {
                   { label: '品牌故事', href: '/about' },
                   { label: '预约私洽', href: '/about#contact' },
                 ].map((l, i) => (
-                  <Link key={i} href={l.href} className="block text-xs text-gray-500 hover:text-burma-400 transition-colors">{l.label}</Link>
+                  <Link key={i} href={l.href} className="block text-xs text-rich-400 hover:text-gold-400 transition-colors">{l.label}</Link>
                 ))}
               </div>
             </div>
 
             {/* 品类 */}
             <div>
-              <h4 className="text-xs font-semibold text-ivory-100 mb-5 tracking-wide uppercase">翡翠品类</h4>
+              <h4 className="text-xs font-semibold text-rich-800 mb-5 tracking-wide uppercase">翡翠品类</h4>
               <div className="space-y-3">
                 {['翡翠手镯', '翡翠挂件', '翡翠戒面', '翡翠原石', '翡翠摆件'].map((c, i) => (
-                  <span key={i} className="block text-xs text-gray-500">{c}</span>
+                  <span key={i} className="block text-xs text-rich-400">{c}</span>
                 ))}
               </div>
             </div>
 
             {/* 联系 */}
             <div>
-              <h4 className="text-xs font-semibold text-ivory-100 mb-5 tracking-wide uppercase">联系</h4>
-              <div className="space-y-3 text-xs text-gray-500">
+              <h4 className="text-xs font-semibold text-rich-800 mb-5 tracking-wide uppercase">联系</h4>
+              <div className="space-y-3 text-xs text-rich-400">
                 <p>📍 云南省德宏州瑞丽市</p>
                 <p>📧 contact@yaxianghuo.com</p>
-                <p className="text-burma-400 mt-6 pt-4 border-t border-burma-400/10">关注微信公众号</p>
-                <p className="text-gray-600">获取最新藏品资讯</p>
+                <p className="text-gold-400 mt-6 pt-4 border-t border-gold-400/10">关注微信公众号</p>
+                <p className="text-rich-300">获取最新藏品资讯</p>
               </div>
             </div>
           </div>
 
-          <div className="mt-16 pt-8 border-t border-burma-400/8 flex flex-col sm:flex-row items-center justify-between gap-4">
-            <p className="text-[10px] text-gray-600">© 2026 压箱货 YaXiangHuo · 缅甸翡翠 · 德宏直营</p>
-            <div className="flex gap-6 text-[10px] text-gray-600">
+          <div className="mt-16 pt-8 border-t border-gold-400/8 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p className="text-[10px] text-rich-300">© 2026 压箱货 YaXiangHuo · 缅甸翡翠 · 德宏直营</p>
+            <div className="flex gap-6 text-[10px] text-rich-300">
               <span>天然A货保证</span>
               <span>矿区直供</span>
               <span>品质传承</span>
