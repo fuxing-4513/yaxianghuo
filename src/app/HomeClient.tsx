@@ -494,50 +494,6 @@ export default function HomeClient() {
           </div>
         </div>
       </section>
-
-      {/* ═══════════ 品牌哲学 ═══════════ */}
-      <section className="relative py-32 border-t border-gold-400/5 overflow-hidden">
-        <div className="absolute inset-0 bg-gold-pattern opacity-50" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[500px] glow-gold" />
-
-        <div className="max-w-5xl mx-auto px-6 relative z-10">
-          <div className="text-center mb-16">
-            <span className="text-[11px] text-gold-400 tracking-[0.25em] uppercase">Philosophy</span>
-            <h2 className="text-3xl md:text-4xl font-serif font-bold text-rich-800 mt-4 mb-4">
-              何为<span className="text-gold-gradient">压箱货</span>
-            </h2>
-            <div className="divider-gold-center mb-6" />
-          </div>
-
-          {/* 大字排版 */}
-          <div className="space-y-8 text-center">
-            <p className="text-2xl md:text-3xl font-serif text-rich-800 leading-relaxed max-w-3xl mx-auto">
-              「古人将最珍贵的物件压于箱底，代代相传——<br />
-              <span className="text-gold-gradient">是为<span className="font-bold">压箱货</span>。</span>」
-            </p>
-            <p className="text-sm text-rich-500 leading-loose max-w-2xl mx-auto">
-              在信息喧嚣的时代，我们选择回归翡翠的本质——它不是快消品，不是投机工具，
-              而是大自然馈赠的艺术品，是刻在骨子里的东方审美，是真正值得世代传承的家族珍宝。
-            </p>
-          </div>
-
-          {/* 四柱 */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-20">
-            {[
-              { label: '真', desc: '天然A货\n绝无处理' },
-              { label: '精', desc: '万里挑一\n唯精是举' },
-              { label: '传', desc: '压箱之宝\n代代相传' },
-              { label: '信', desc: '源头直供\n价格透明' },
-            ].map((v, i) => (
-              <div key={i} className="text-center p-6 rounded-xl bg-cream-100/40 border border-cream-200/30 hover:border-gold-400/15 transition-colors">
-                <div className="text-2xl font-serif font-bold text-gold-gradient mb-2">{v.label}</div>
-                <p className="text-[11px] text-rich-400 leading-relaxed whitespace-pre-line">{v.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* ═══════════ 新闻中心 ═══════════ */}
       <section className="relative py-32 border-t border-gold-400/5 overflow-hidden">
         <div className="absolute top-1/3 left-0 w-[350px] h-[350px] glow-gold" />
@@ -590,6 +546,50 @@ export default function HomeClient() {
                 <span className="text-[10px] text-gold-400/60 group-hover:text-gold-400 transition-colors cursor-pointer border-b border-gold-400/20 pb-0.5">
                   阅读更多 →
                 </span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+
+      {/* ═══════════ 品牌哲学 ═══════════ */}
+      <section className="relative py-32 border-t border-gold-400/5 overflow-hidden">
+        <div className="absolute inset-0 bg-gold-pattern opacity-50" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[500px] glow-gold" />
+
+        <div className="max-w-5xl mx-auto px-6 relative z-10">
+          <div className="text-center mb-16">
+            <span className="text-[11px] text-gold-400 tracking-[0.25em] uppercase">Philosophy</span>
+            <h2 className="text-3xl md:text-4xl font-serif font-bold text-rich-800 mt-4 mb-4">
+              何为<span className="text-gold-gradient">压箱货</span>
+            </h2>
+            <div className="divider-gold-center mb-6" />
+          </div>
+
+          {/* 大字排版 */}
+          <div className="space-y-8 text-center">
+            <p className="text-2xl md:text-3xl font-serif text-rich-800 leading-relaxed max-w-3xl mx-auto">
+              「古人将最珍贵的物件压于箱底，代代相传——<br />
+              <span className="text-gold-gradient">是为<span className="font-bold">压箱货</span>。</span>」
+            </p>
+            <p className="text-sm text-rich-500 leading-loose max-w-2xl mx-auto">
+              在信息喧嚣的时代，我们选择回归翡翠的本质——它不是快消品，不是投机工具，
+              而是大自然馈赠的艺术品，是刻在骨子里的东方审美，是真正值得世代传承的家族珍宝。
+            </p>
+          </div>
+
+          {/* 四柱 */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-20">
+            {[
+              { label: '真', desc: '天然A货\n绝无处理' },
+              { label: '精', desc: '万里挑一\n唯精是举' },
+              { label: '传', desc: '压箱之宝\n代代相传' },
+              { label: '信', desc: '源头直供\n价格透明' },
+            ].map((v, i) => (
+              <div key={i} className="text-center p-6 rounded-xl bg-cream-100/40 border border-cream-200/30 hover:border-gold-400/15 transition-colors">
+                <div className="text-2xl font-serif font-bold text-gold-gradient mb-2">{v.label}</div>
+                <p className="text-[11px] text-rich-400 leading-relaxed whitespace-pre-line">{v.desc}</p>
               </div>
             ))}
           </div>
