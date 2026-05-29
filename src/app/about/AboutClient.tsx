@@ -41,7 +41,7 @@ export default function AboutClient() {
 
           {/* 装饰区块 */}
           <div className="relative">
-            <div className="aspect-square bg-gradient-to-br from-jade-950/40 via-rich-800 to-gold-900/15 rounded-xl border border-gold-400/10 flex items-center justify-center overflow-hidden">
+            <div className="aspect-square bg-gradient-to-br from-jade-800/40 via-rich-800 to-gold-900/15 rounded-xl border border-gold-400/10 flex items-center justify-center overflow-hidden">
               <div className="absolute inset-0 bg-gold-pattern opacity-30" />
               <div className="relative z-10 text-center p-12">
                 {/* 佛塔 SVG */}

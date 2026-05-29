@@ -251,7 +251,7 @@ export default function HomeClient() {
             <div>
               {/* 品牌徽章 */}
               <div className="inline-flex items-center gap-2.5 bg-gold-400/8 border border-gold-400/15 rounded-full px-5 py-2 mb-8 animate-fade-up">
-                <div className="w-1.5 h-1.5 rounded-full bg-jade-400 animate-gold-pulse" />
+                <div className="w-1.5 h-1.5 rounded-full bg-jade-500 animate-gold-pulse" />
                 <span className="text-[11px] text-gold-300 tracking-[0.15em] uppercase">缅甸帕敢矿区 · 德宏直营</span>
               </div>
 
@@ -392,7 +392,7 @@ export default function HomeClient() {
               <Link href="/products" key={p.id}
                 className="group bg-cream-100/80 border border-cream-200/50 rounded-xl overflow-hidden hover:border-gold-400/25 transition-all duration-500 hover:-translate-y-1 hover:shadow-2xl hover:shadow-gold-900/10">
                 {/* 产品图占位 - 翡翠氛围 */}
-                <div className="aspect-square bg-gradient-to-br from-jade-950/50 via-rich-800 to-gold-900/15 flex items-center justify-center relative overflow-hidden">
+                <div className="aspect-square bg-gradient-to-br from-jade-800/50 via-rich-800 to-gold-900/15 flex items-center justify-center relative overflow-hidden">
                   <div className="absolute inset-0">
                     <div className="absolute inset-0 bg-gradient-to-t from-rich-950/60 via-transparent to-transparent" />
                     {/* 模拟翡翠纹理 */}
@@ -408,8 +408,8 @@ export default function HomeClient() {
                     </span>
                   )}
                   <div className="relative z-10 flex flex-col items-center">
-                    <div className="w-16 h-16 rounded-full bg-gradient-to-br from-jade-400/20 to-gold-400/10 border border-jade-500/30 flex items-center justify-center group-hover:scale-110 group-hover:border-gold-400/40 transition-all duration-500">
-                      <svg viewBox="0 0 24 24" className="w-8 h-8 text-jade-400/60" fill="currentColor">
+                    <div className="w-16 h-16 rounded-full bg-gradient-to-br from-jade-500/20 to-gold-400/10 border border-jade-500/30 flex items-center justify-center group-hover:scale-110 group-hover:border-gold-400/40 transition-all duration-500">
+                      <svg viewBox="0 0 24 24" className="w-8 h-8 text-jade-500/60" fill="currentColor">
                         <path d="M12 2L4 8l2 4-2 4 2 4-2 4 8 6 8-6-2-4 2-4-2-4 2-4-8-6z" />
                       </svg>
                     </div>

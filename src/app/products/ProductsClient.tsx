@@ -59,7 +59,7 @@ export default function ProductsClient() {
           {filtered.map((p, i) => (
             <div key={p.id}
               className="group bg-cream-100/70 border border-cream-200/40 rounded-xl overflow-hidden hover:border-gold-400/25 hover:-translate-y-1 transition-all duration-500 hover:shadow-xl hover:shadow-gold-900/10">
-              <div className="aspect-square bg-gradient-to-br from-jade-950/50 via-rich-800 to-gold-900/15 flex items-center justify-center relative overflow-hidden">
+              <div className="aspect-square bg-gradient-to-br from-jade-800/50 via-rich-800 to-gold-900/15 flex items-center justify-center relative overflow-hidden">
                 <div className="absolute inset-0">
                   <div className="absolute inset-0 bg-gradient-to-t from-rich-950/50 via-transparent to-transparent" />
                 </div>
@@ -68,13 +68,13 @@ export default function ProductsClient() {
                     {p.tag}
                   </span>
                 )}
-                <div className="relative z-10 w-16 h-16 rounded-full bg-gradient-to-br from-jade-400/15 to-gold-400/8 border border-jade-500/25 flex items-center justify-center group-hover:scale-110 group-hover:border-gold-400/35 transition-all duration-500">
+                <div className="relative z-10 w-16 h-16 rounded-full bg-gradient-to-br from-jade-500/15 to-gold-400/8 border border-jade-500/25 flex items-center justify-center group-hover:scale-110 group-hover:border-gold-400/35 transition-all duration-500">
                   {p.category === '原石' ? (
                     <svg viewBox="0 0 24 24" className="w-8 h-8 text-gold-400/50" fill="currentColor">
                       <path d="M12 2C6.5 2 2 6.5 2 12c0 2 1 3 2 4s3 1 4 2 1 3 2 4c1-1 1-3 2-4s3 0 4-2 2-2 2-4c0-5.5-4.5-10-10-10z" />
                     </svg>
                   ) : (
-                    <svg viewBox="0 0 24 24" className="w-8 h-8 text-jade-400/50" fill="currentColor">
+                    <svg viewBox="0 0 24 24" className="w-8 h-8 text-jade-500/50" fill="currentColor">
                       <path d="M12 2L4 8l2 4-2 4 2 4-2 4 8 6 8-6-2-4 2-4-2-4 2-4-8-6z" />
                     </svg>
                   )}
